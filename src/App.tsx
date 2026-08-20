@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AppStateProvider } from './state/AppStateContext';
+import { ThemeProvider } from './state/ThemeProvider';
 import { useAppState } from './state/useAppState';
 import { TopNav } from './components/layout/TopNav';
 import { DashboardPage } from './components/dashboard/DashboardPage';
@@ -32,9 +33,11 @@ function AppShell() {
 
 function App() {
   return (
-    <AppStateProvider>
-      <AppShell />
-    </AppStateProvider>
+    <ThemeProvider>
+      <AppStateProvider>
+        <AppShell />
+      </AppStateProvider>
+    </ThemeProvider>
   );
 }
 
