@@ -6,7 +6,7 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
   --color-surface: #ffffff;
-  --color-surface-alt: #f8fafc;
+  --color-surface-alt: #fce7f3;
   --color-border: #e2e8f0;
   --color-ink: #0f172a;
   --color-ink-muted: #64748b;
@@ -37,7 +37,7 @@
 /* Dark palette overrides the same semantic tokens; components never branch on theme directly. */
 .dark {
   --color-surface: #111827;
-  --color-surface-alt: #0b1120;
+  --color-surface-alt: #2a1220;
   --color-border: #263244;
   --color-ink: #e5e9f0;
   --color-ink-muted: #93a0b4;
